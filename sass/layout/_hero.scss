@@ -1,0 +1,72 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--footer-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/mobile/mobile-bgi-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  @include font($fw: 900, $fs: 26px, $lh: 1.62, $ls: 0.06em);
+  text-transform: uppercase;
+  color: var(--secondary-accent-color);
+}
+
+// 2x, 0 - 767px
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/mobile/mobile-bgi-header@2x.jpg');
+  }
+}
+
+// 1x, 768px+
+@media screen and (min-width: $tablet) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/tablet/tablet-bgi-header.jpg');
+  }
+}
+
+// 2x, 768px+
+@media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+  (min-resolution: 192dpi) and (min-width: $tablet),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/tablet/tablet-bgi-header@2x.jpg');
+  }
+}
+
+// 1x, 1200px+
+@media screen and (min-width: $desktop) {
+  .hero {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/desktop/desktop-bgi-header.jpg');
+  }
+
+  .hero__title {
+    @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+  }
+}
+
+// 2x, 1200px+
+@media (min-device-pixel-ratio: 2) and (min-width: $desktop),
+  (min-resolution: 192dpi) and (min-width: $desktop),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/desktop/desktop-bgi-header@2x.jpg');
+  }
+}

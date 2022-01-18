@@ -1,0 +1,12 @@
+.title {
+  @include font($fw: 700, $fs: 36px, $lh: 1.16);
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+// 1200+
+@media screen and (min-width: $desktop) {
+  .title {
+    @include font($fw: 700, $fs: 28px, $lh: 1.18);
+  }
+}

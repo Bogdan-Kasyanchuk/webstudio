@@ -1,0 +1,20 @@
+.button-menu {
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-accent-color);
+    cursor: pointer;
+  }
+}
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .button-menu {
+    display: none;
+  }
+}

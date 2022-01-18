@@ -1,0 +1,49 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header__logo--color {
+  color: #000000;
+}
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .header__container {
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .header__logo {
+    margin-right: 88px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+// 1200+
+@media screen and (min-width: $desktop) {
+  .header__logo {
+    margin-right: 93px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

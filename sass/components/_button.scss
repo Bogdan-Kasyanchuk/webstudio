@@ -1,0 +1,20 @@
+.button {
+  min-width: 200px;
+  padding: 10px;
+  background: var(--primary-accent-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  @include font($fw: 700, $fs: 16px, $lh: 1.87, $ls: 0.06em);
+  color: var(--secondary-accent-color);
+  transition-property: background;
+  transition-duration: var(--trans-dur-250ms);
+  transition-timing-function: var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    cursor: pointer;
+  }
+}
