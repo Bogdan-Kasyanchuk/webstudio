@@ -31,4 +31,3 @@ function filter(event) {
     elCard.insertAdjacentHTML('beforeend', array.map(element => element.outerHTML).join(' '));
   }
 }
-``;

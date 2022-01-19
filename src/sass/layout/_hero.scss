@@ -17,7 +17,7 @@
   color: var(--secondary-accent-color);
 }
 
-// 2x, 0 - 767px
+// 0 - 767px
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
@@ -27,7 +27,7 @@
   }
 }
 
-// 1x, 768px+
+// 768px+
 @media screen and (min-width: $tablet) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -35,7 +35,6 @@
   }
 }
 
-// 2x, 768px+
 @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
   (min-resolution: 192dpi) and (min-width: $tablet),
   (min-resolution: 2dppx) and (min-width: $tablet) {
@@ -45,11 +44,11 @@
   }
 }
 
-// 1x, 1200px+
+// 1200px+
 @media screen and (min-width: $desktop) {
   .hero {
-    margin: 0 auto;
     max-width: 1600px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -61,7 +60,6 @@
   }
 }
 
-// 2x, 1200px+
 @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
   (min-resolution: 192dpi) and (min-width: $desktop),
   (min-resolution: 2dppx) and (min-width: $desktop) {

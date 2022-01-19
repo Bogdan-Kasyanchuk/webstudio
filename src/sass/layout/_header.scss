@@ -15,15 +15,15 @@
 }
 
 .header__logo--color {
-  color: #000000;
+  color: var(--third-text-color);
 }
 
 // 768+
 @media screen and (min-width: $tablet) {
   .header__container {
     justify-content: flex-start;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .header__navigation {
@@ -34,15 +34,15 @@
 
   .header__logo {
     margin-right: 88px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
 // 1200+
 @media screen and (min-width: $desktop) {
   .header__logo {
-    margin-right: 93px;
+    margin-right: 92px;
     padding-top: 10px;
     padding-bottom: 10px;
   }

@@ -2,21 +2,21 @@
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
-    z-index: 999;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: var(--secondary-accent-color);
+    z-index: 999;
     overflow: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
-    transition-property: opacity, visibility;
-    transition-duration: var(--trans-dur-250ms);
-    transition-timing-function: var(--cubic-bezier);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition-property: opacity, visibility;
+    transition-duration: var(--trans-dur-250ms);
+    transition-timing-function: var(--cubic-bezier);
 
     &.is-open {
       opacity: 1;
@@ -38,12 +38,13 @@
   .close-button-menu {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 14px;
     padding: 0;
     line-height: 0;
     background-color: transparent;
     border: none;
     fill: currentColor;
+    cursor: pointer;
     transition-property: fill;
     transition-duration: var(--trans-dur-250ms);
     transition-timing-function: var(--cubic-bezier);
@@ -51,13 +52,12 @@
     &:hover,
     &:focus {
       fill: var(--primary-accent-color);
-      cursor: pointer;
     }
   }
 
   .mobile-menu__nav-item {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
     }
   }
 
@@ -76,12 +76,12 @@
   }
 
   .mobile-menu__contact {
-    margin-bottom: 64px;
+    margin-bottom: 30px;
   }
 
   .mobile-menu__contact-item {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
     }
   }
 
@@ -91,7 +91,6 @@
 
     .mobile-menu__contact-item:not(:last-child) & {
       @include font($fw: 500, $fs: 34px, $lh: 1.18, $ls: 0.02em);
-      color: var(--primary-accent-color);
     }
 
     &:hover,
@@ -107,16 +106,21 @@
 
   .mobile-menu__social-item {
     &:not(:last-child) {
-      margin-right: 10px;
-      padding-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      margin-right: 12px;
+      padding-right: 12px;
+      border-right: 2px solid rgba(33, 33, 33, 0.2);
     }
   }
 
   .mobile-menu__social-link {
     @include font($fw: 500, $fs: 18px, $lh: 1.2, $ls: 0.02em);
     text-transform: capitalize;
-    color: var(--primary-accent-color);
+    color: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-accent-color);
+    }
   }
 }
 

@@ -7,20 +7,20 @@
 @media screen and (min-width: $mobile) {
   .container {
     margin: 0 auto;
-    width: 480px;
+    width: $mobile;
   }
 }
 
 // 768+
 @media screen and (min-width: $tablet) {
   .container {
-    width: 768px;
+    width: $tablet;
   }
 }
 
 // 1200+
 @media screen and (min-width: $desktop) {
   .container {
-    width: 1200px;
+    width: $desktop;
   }
 }

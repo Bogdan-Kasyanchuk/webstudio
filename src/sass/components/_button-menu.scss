@@ -4,11 +4,11 @@
   background-color: transparent;
   border: none;
   fill: currentColor;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     fill: var(--primary-accent-color);
-    cursor: pointer;
   }
 }
 

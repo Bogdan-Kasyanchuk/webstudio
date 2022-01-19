@@ -17,15 +17,15 @@
   border-radius: 50%;
   padding: 0;
   fill: currentColor;
+  cursor: pointer;
   transition-property: transform, fill;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    transform: scale(1.1);
     fill: var(--primary-accent-color);
-    cursor: pointer;
   }
 }
 
@@ -39,15 +39,15 @@
 .modal-window__form-title {
   margin-bottom: 12px;
   @include font($fw: 700, $fs: 20px, $lh: 1.5);
-  text-align: center;
   color: var(--secondary-text-color);
+  text-align: center;
 }
 
 // 480+
 @media screen and (min-width: $mobile) {
   .modal-window {
     width: 450px;
-    height: 609px;
+    height: 610px;
     left: 50%;
     transform: translate(-50%, 0);
   }

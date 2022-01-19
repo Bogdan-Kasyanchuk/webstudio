@@ -20,10 +20,7 @@
 }
 
 .team-list__description {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px 30px 16px;
   text-align: center;
 }
 
@@ -63,8 +60,8 @@
 // 1200+
 @media screen and (min-width: $desktop) {
   .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .team__title {
