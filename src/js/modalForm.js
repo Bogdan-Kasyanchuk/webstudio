@@ -1,38 +1,31 @@
-const elForm = document.querySelector('[data-modal-form]');
+import refs from './refs.js';
 
-const refs = {
-  elName: elForm.querySelector('input[type=text]'),
-  elPhone: elForm.querySelector('input[type=tel]'),
-  elEmail: elForm.querySelector('input[type=email]'),
-  elComment: elForm.querySelector('textarea[name=comment]'),
-};
+const { elModalForm } = refs;
 
-const { elName, elPhone, elEmail, elComment } = refs;
+elModalForm.addEventListener('submit', getModalInfoForm);
 
-function UsersInfo(name, phone, email, comment) {
+const elName = elModalForm.querySelector('input[type=text]');
+const elPhone = elModalForm.querySelector('input[type=tel]');
+const elEmail = elModalForm.querySelector('input[type=email]');
+const elComment = elModalForm.querySelector('textarea[name=comment]');
+
+const users = [];
+
+function User(name, phone, email, comment) {
   this.name = name;
   this.phone = phone;
   this.email = email;
   this.comment = comment;
 }
 
-function modalForm(event) {
+function getModalInfoForm(event) {
   event.preventDefault();
-  if (
-    elName.value !== '' &&
-    elPhone.value !== '' &&
-    elEmail.value !== '' &&
-    elComment.value !== ''
-  ) {
-    const userInfo = new UsersInfo(
-      elName.value.trim(),
-      elPhone.value.trim(),
-      elEmail.value,
-      elComment.value.trim(),
-    );
-    console.log(userInfo);
-  }
-  elForm.reset();
+  const user = new User(
+    elName.value.trim(),
+    elPhone.value.trim(),
+    elEmail.value,
+    elComment.value.trim(),
+  );
+  elModalForm.reset();
+  return users.push(user);
 }
-
-elForm.addEventListener('submit', modalForm);

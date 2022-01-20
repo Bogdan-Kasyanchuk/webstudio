@@ -3,9 +3,8 @@
   @include font($fw: 500, $fs: 16px, $lh: 1.62);
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
-  border: transparent;
+  border: none;
   border-radius: 4px;
-  cursor: pointer;
   transition-property: background-color, color, box-shadow;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);

@@ -1,20 +1,15 @@
-.button-menu {
+.button-burger-close {
   padding: 0;
   line-height: 0;
   background-color: transparent;
   border: none;
   fill: currentColor;
-  cursor: pointer;
+  transition-property: fill;
+  transition-duration: var(--trans-dur-250ms);
+  transition-timing-function: var(--cubic-bezier);
 
   &:hover,
   &:focus {
     fill: var(--primary-accent-color);
-  }
-}
-
-// 768+
-@media screen and (min-width: $tablet) {
-  .button-menu {
-    display: none;
   }
 }

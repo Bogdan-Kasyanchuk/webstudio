@@ -1,17 +1,29 @@
-function modal() {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+import refs from './refs.js';
 
-  refs.openModalBtn?.addEventListener('click', toggleModal);
-  refs.closeModalBtn?.addEventListener('click', toggleModal);
+const { elBackdrop, elBtnModalOpen, elBtnModalClose } = refs;
 
-  function toggleModal() {
-    document.body.classList.toggle('scroll');
-    refs.modal.classList.toggle('is-hidden');
-  }
+elBtnModalOpen.addEventListener('click', openModal);
+
+function openModal() {
+  document.body.classList.toggle('scroll');
+  elBackdrop.classList.toggle('is-hidden');
+  elBtnModalClose.addEventListener('click', closeModal);
+  window.addEventListener('keydown', setKeyListener);
+  elBackdrop.addEventListener('click', setBackdropListener);
 }
 
-modal();
+function closeModal() {
+  document.body.classList.toggle('scroll');
+  elBackdrop.classList.toggle('is-hidden');
+  window.removeEventListener('keydown', setKeyListener);
+  elBackdrop.removeEventListener('click', setBackdropListener);
+}
+
+function setKeyListener(event) {
+  if (event.key === 'Escape') closeModal();
+}
+
+function setBackdropListener(event) {
+  if (!event.target.classList.contains('backdrop')) return;
+  closeModal();
+}

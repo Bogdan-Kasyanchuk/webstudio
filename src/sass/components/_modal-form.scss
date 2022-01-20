@@ -138,6 +138,7 @@
 
 .modal-form__button {
   display: block;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -146,6 +147,6 @@
   .form-policy {
     padding-left: 10px;
     padding-right: 10px;
-    @include font($fs: 14px, $lh: 1.71);
+    @include font($lh: 1.71);
   }
 }

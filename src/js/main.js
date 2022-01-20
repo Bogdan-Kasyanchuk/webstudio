@@ -1,5 +1,6 @@
+import './buttonUp';
 import './filter.js';
-import './menu.js';
+import './mobile-menu.js';
 import './modal.js';
 import './modalForm.js';
-import './subscriptionForm.js';
+import './subscribeForm.js';

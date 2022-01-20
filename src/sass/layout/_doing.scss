@@ -1,5 +1,5 @@
 // 0-1199
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: calc($desktop - 1px)) {
   .doing {
     display: none;
   }

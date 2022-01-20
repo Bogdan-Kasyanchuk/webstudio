@@ -76,7 +76,7 @@
   }
 
   .contact-list__link {
-    @include font($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
+    @include font($fw: 500, $ls: 0.02em);
   }
 
   .contact-list__icon {

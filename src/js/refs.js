@@ -1,0 +1,15 @@
+export default {
+  elButtonUp: document.querySelector('[data-button-up]'),
+  elFilter: document.querySelector('[data-filter]'),
+  elCard: document.querySelector('[data-card]'),
+  elMobileMenu: document.querySelector('[data-menu]'),
+  elBtnMobileMenuOpen: document.querySelector('[data-menu-open]'),
+  elBtnMobileMenuClose: document.querySelector('[data-menu-close]'),
+  elFilterMobile: document.querySelector('[data-filter-mobile]'),
+  elContactMobile: document.querySelector('[data-contact-mobile]'),
+  elBackdrop: document.querySelector('[data-backdrop]'),
+  elBtnModalOpen: document.querySelector('[data-modal-open]'),
+  elBtnModalClose: document.querySelector('[data-modal-close]'),
+  elModalForm: document.querySelector('[data-modal-form]'),
+  elSubscribeForm: document.querySelector('[data-subscribe-form]'),
+};

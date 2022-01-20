@@ -1,5 +1,5 @@
 // 0-767
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc($tablet - 1px)) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -35,24 +35,10 @@
     padding: 48px 40px;
   }
 
-  .close-button-menu {
+  .button-burger-close__mobile-menu {
     position: absolute;
     top: 10px;
     right: 14px;
-    padding: 0;
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    fill: currentColor;
-    cursor: pointer;
-    transition-property: fill;
-    transition-duration: var(--trans-dur-250ms);
-    transition-timing-function: var(--cubic-bezier);
-
-    &:hover,
-    &:focus {
-      fill: var(--primary-accent-color);
-    }
   }
 
   .mobile-menu__nav-item {
@@ -69,10 +55,6 @@
     &:focus {
       color: var(--primary-accent-color);
     }
-  }
-
-  .mobile-menu__nav-link--current {
-    color: var(--primary-accent-color);
   }
 
   .mobile-menu__contact {

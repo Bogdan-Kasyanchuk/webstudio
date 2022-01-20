@@ -13,7 +13,7 @@
 }
 
 // 0-767
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc($tablet - 1px)) {
   .portfolio__filter {
     flex-wrap: wrap;
     margin-left: -8px;

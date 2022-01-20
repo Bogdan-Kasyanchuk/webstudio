@@ -17,10 +17,14 @@
   color: var(--secondary-accent-color);
 }
 
+.hero__button {
+  width: 200px;
+}
+
 // 0 - 767px
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
+@media (min-device-pixel-ratio: 2) and (max-width: calc($tablet - 1px)),
+  (min-resolution: 192dpi) and (max-width: calc($tablet - 1px)),
+  (min-resolution: 2dppx) and (max-width: calc($tablet - 1px)) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/mobile/mobile-bgi-header@2x.jpg');

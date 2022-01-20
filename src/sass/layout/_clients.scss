@@ -37,7 +37,7 @@
 }
 
 // 0-767
-@media screen and (max-width: 767px) {
+@media screen and (max-width: calc($tablet - 1px)) {
   .clients-list__item {
     &:nth-child(odd) {
       margin-right: 30px;
@@ -50,7 +50,7 @@
 }
 
 // 768-1199
-@media screen and (min-width: $tablet) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
   .clients-list__item {
     &:not(:nth-child(3n + 3)) {
       margin-right: 30px;

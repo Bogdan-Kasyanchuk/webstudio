@@ -7,33 +7,10 @@
   border-radius: 4px;
 }
 
-.close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: var(--secondary-accent-color);
-  border-radius: 50%;
-  padding: 0;
-  fill: currentColor;
-  cursor: pointer;
-  transition-property: transform, fill;
-  transition-duration: var(--trans-dur-250ms);
-  transition-timing-function: var(--cubic-bezier);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-    fill: var(--primary-accent-color);
-  }
-}
-
-.modal-window__close-button {
+.button-burger-close__modal-window {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 4px;
+  right: 4px;
 }
 
 .modal-window__form-title {

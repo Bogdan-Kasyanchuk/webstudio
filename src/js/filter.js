@@ -1,17 +1,15 @@
-const refs = {
-  elFilter: document.querySelector('[data-filter]'),
-  elCard: document.querySelector('[data-card]'),
-};
+import refs from './refs.js';
 
 const { elFilter, elCard } = refs;
 
-const array = [...elCard.children];
-
 elFilter.addEventListener('click', filter);
 
+const array = [...elCard.children];
+
 function filter(event) {
-  elCard.innerHTML = '';
+  if (!event.target.classList.contains('button-filter')) return;
   if (event.target.textContent !== 'Все') {
+    elCard.innerHTML = '';
     elCard.insertAdjacentHTML(
       'beforeend',
       array
@@ -28,6 +26,7 @@ function filter(event) {
         .join(' '),
     );
   } else {
+    elCard.innerHTML = '';
     elCard.insertAdjacentHTML('beforeend', array.map(element => element.outerHTML).join(' '));
   }
 }

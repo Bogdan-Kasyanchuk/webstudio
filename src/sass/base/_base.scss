@@ -2,6 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  @include font();
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
+}
+
+body.scroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -31,12 +42,13 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  background: var(--primary-bg-color);
+button {
+  cursor: pointer;
 }
 
-body.scroll {
-  overflow: hidden;
+.button__up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
 }

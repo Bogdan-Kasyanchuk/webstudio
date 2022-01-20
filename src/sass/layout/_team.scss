@@ -34,6 +34,20 @@
   @include font($fs: 16px, $lh: 1.18);
 }
 
+.social-list__team {
+  padding-bottom: 24px;
+}
+
+.social-list__link--team-color {
+  fill: var(--primary-fill-color);
+  transition-property: background-color, fill, transform;
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary-accent-color);
+  }
+}
+
 // 768+
 @media screen and (min-width: $tablet) {
   .team-list {
@@ -74,5 +88,9 @@
 
   .team-list__item {
     flex-basis: calc((100% - 120px) / 4);
+  }
+
+  .social-list__team {
+    padding-bottom: 30px;
   }
 }
