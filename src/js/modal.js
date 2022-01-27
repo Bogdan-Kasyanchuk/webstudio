@@ -1,6 +1,7 @@
-import refs from './refs.js';
+import refs from './refs';
+import { getModalInfoForm } from './modalForm';
 
-const { elBackdrop, elBtnModalOpen, elBtnModalClose } = refs;
+const { elBackdrop, elBtnModalOpen, elBtnModalClose, elModalForm } = refs;
 
 elBtnModalOpen.addEventListener('click', openModal);
 
@@ -10,6 +11,7 @@ function openModal() {
   elBtnModalClose.addEventListener('click', closeModal);
   window.addEventListener('keydown', setKeyListener);
   elBackdrop.addEventListener('click', setBackdropListener);
+  elModalForm.addEventListener('submit', getModalInfoForm);
 }
 
 function closeModal() {
@@ -17,6 +19,7 @@ function closeModal() {
   elBackdrop.classList.toggle('is-hidden');
   window.removeEventListener('keydown', setKeyListener);
   elBackdrop.removeEventListener('click', setBackdropListener);
+  elModalForm.removeEventListener('submit', getModalInfoForm);
 }
 
 function setKeyListener(event) {

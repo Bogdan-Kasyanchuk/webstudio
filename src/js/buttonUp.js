@@ -1,5 +1,5 @@
 import throttle from 'lodash.throttle';
-import refs from './refs.js';
+import refs from './refs';
 
 const { elButtonUp } = refs;
 

@@ -1,8 +1,6 @@
-import refs from './refs.js';
+import refs from './refs';
 
 const { elModalForm } = refs;
-
-elModalForm.addEventListener('submit', getModalInfoForm);
 
 const elName = elModalForm.querySelector('input[type=text]');
 const elPhone = elModalForm.querySelector('input[type=tel]');
@@ -18,7 +16,7 @@ function User(name, phone, email, comment) {
   this.comment = comment;
 }
 
-function getModalInfoForm(event) {
+export function getModalInfoForm(event) {
   event.preventDefault();
   const user = new User(
     elName.value.trim(),
