@@ -8,7 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   overflow-y: scroll;
-  transition-property: opacity, visibility;
+  pointer-events: initial;
+  transition-property: opacity, visibility, transform;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
 }
@@ -17,4 +18,5 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(1.1);
 }

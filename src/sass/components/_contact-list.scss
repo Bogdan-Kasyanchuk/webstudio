@@ -29,8 +29,9 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--primary-accent-color);
+      outline: none;
     }
   }
 

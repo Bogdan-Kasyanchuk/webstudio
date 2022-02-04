@@ -43,8 +43,9 @@
   transition-property: background-color, fill, transform;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     fill: var(--secondary-accent-color);
+    outline: none;
   }
 }
 

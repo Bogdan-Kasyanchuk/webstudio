@@ -29,10 +29,11 @@
   transition-timing-function: var(--cubic-bezier);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     fill: var(--primary-accent-color);
     border-color: var(--primary-accent-color);
     transform: scale(0.9);
+    outline: none;
   }
 }
 

@@ -9,7 +9,8 @@
   transition-timing-function: var(--cubic-bezier);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     fill: var(--primary-accent-color);
+    outline: none;
   }
 }

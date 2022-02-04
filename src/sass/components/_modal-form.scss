@@ -2,10 +2,6 @@
   display: block;
   @include font($fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: var(--primary-text-color);
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .modal-form__form-label {
@@ -20,17 +16,13 @@
   color: var(--secondary-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition-property: border-color, outline;
+  transition-property: border-color;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
 
   &:focus {
     border-color: var(--primary-accent-color);
     outline: none;
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }
 
@@ -44,8 +36,8 @@
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
   fill: var(--secondary-text-color);
+  transform: translateY(-50%);
   transition-property: fill;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
@@ -69,7 +61,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition-property: border-color, outline;
+  transition-property: border-color;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
 
@@ -82,20 +74,12 @@
     border-color: var(--primary-accent-color);
     outline: none;
   }
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .form-policy {
   display: block;
   @include font($fs: 12px, $lh: 1.17);
   color: var(--primary-text-color);
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .modal-form__form-policy {
@@ -110,7 +94,7 @@
   vertical-align: middle;
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
-  transition-property: background, border;
+  transition-property: background-color, border;
   transition-duration: var(--trans-dur-250ms);
   transition-timing-function: var(--cubic-bezier);
 

@@ -52,8 +52,9 @@
     color: var(--secondary-text-color);
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--primary-accent-color);
+      outline: none;
     }
   }
 
@@ -76,8 +77,9 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--primary-accent-color);
+      outline: none;
     }
   }
 
@@ -100,8 +102,9 @@
     color: var(--primary-text-color);
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: var(--primary-accent-color);
+      outline: none;
     }
   }
 }
