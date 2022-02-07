@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://github.com/Bogdan-Kasyanchuk/webstudio",
   "scripts": {
-    "dev": "parcel src/*.html --open --port 3001",
+    "dev": "parcel src/*.html --open --port 3000",
     "build": "parcel build src/*.html --public-url /webstudio/"
   },
   "repository": {
@@ -19,11 +19,13 @@
     "url": "https://github.com/Bogdan-Kasyanchuk/webstudio/issues"
   },
   "devDependencies": {
-    "lodash.throttle": "^4.1.1",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.7.1",
     "sass": "^1.40.1"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1"
   }
 }
